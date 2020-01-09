@@ -1,0 +1,13 @@
+ #canvas {
+     display: block;
+     margin: 0 auto;
+     max-width: 100%;
+ }
+
+ .options {
+     margin: 1rem auto;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     max-width: 300px;
+ }

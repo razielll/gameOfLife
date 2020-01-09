@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Of Life</title>
+</head>
+
+<body onload="init()">
+    <canvas id="canvas" height=600 width=600 onclick="getMousePos(event)"></canvas>
+    <div class="options">
+        <button class="size-btn" onclick="decreaseResolution()">-</button>
+        <button class="size-btn" onclick="increaseResolution()">+</button>
+    </div>
+    <div class="options">
+        stroke color <input type="color" value="#a1a1a1" onchange="setStrokeColor(event)">
+        fill color <input type="color" value="#000000" onchange="setFillColor(event)">
+        grid <input type="checkbox" checked onchange="gridVisibilityToggle(event)">
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
